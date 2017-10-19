@@ -10,28 +10,34 @@
 （PCのマウス操作だけでも操作できます）
 * Bluetoothを受信するArduinoベースのマイコンが、Bluetooth操作コマンドでラジコンのサーボ、ESC（モーターコントローラー）を制御します。
 
+## スマートフォンで動かすアプリ
+* ソースコードは　https://github.com/i386koba/CelluCon.Android
+* フリーテルの格安スマフォ FTJ152Aをつかいました。
+* Android 4.0.3以上、GPS,磁気センサー、Bluetooth のあるスマフォなら使えます。
+
 ## 操作するWeb画面（カメラ映像、位置情報、遠隔操作パネル)
 ![image](https://github.com/cellucon/readme/blob/master/web-pilot.png)
 * https://i386koba.github.io/CelluCon.web/ からWeb画面を開けます。
 * 航路の記録は　https://i386koba.github.io/CelluCon.web/mapLink.html から参照できます。
 * ソースコードは　https://github.com/i386koba/CelluCon.web
 　
-## スマートフォンで動かすアプリ
-* ソースコードは　https://github.com/i386koba/CelluCon.Android
-* フリーテルの格安スマフォ FTJ152Aをつかいました。
-* Android 4.0.3以上、GPS,磁気センサー、Bluetooth のあるスマフォなら使えます。
-
 ## スマートフォンを乗せるラジコン
 ![image](https://github.com/cellucon/readme/blob/master/rover.png)
 * TAMIYAのグラスホッパー、完成品を購入して、スマフォをつける改造しました。完成品はプロポが余ります。
 * ラジコンの心得のある人なら完成品でなく、シャーシキットとサーボとESCを別購入すればあれば安上がりでプロポが余りません。
 
 ## Bluetoothを受信するArduinoベースのマイコン
+* Arduinoで手作りした場合 https://github.com/i386koba/Droidrone-ino
 * Arduinoスケッチ　https://github.com/i386koba/CellulCon.arduino
 * Arduinoベースマイコン基板 https://github.com/i386koba/CelluCon.kicad
-* Arduinoで手作りした場合 https://github.com/i386koba/Droidrone-ino
 
-## セルコンを動作させるに必要なこと
+## セルコンを動作させるには。
+* Bluetoothを受信するArduinoベースのマイコンを作成 https://github.com/i386koba/Droidrone-ino
+* Arduinoスケッチ　https://github.com/i386koba/CellulCon.arduino　をマイコンに書き込み
+* ラジコンを作成し、マイコンにサーボとESCをつなげる。回転センサはとりあえずなくてもよい。
+* Androidスマフォに https://github.com/i386koba/CelluCon.Android よりアプリをインストール。
+* アプリを起動すると、既存のGoogleIDを問い合わせされるので回答すると、WebRTC（PeerJS)のIDをGoogleドライブに自動アップロードする。
+*　操作画面
 
 ## 動作の様子 2016.05.05 撮影
 https://youtu.be/YdYnNappXGU?t=55s
