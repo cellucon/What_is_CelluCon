@@ -21,6 +21,8 @@
 ## スマートフォンで動かすアプリ
 
 * ソースコードは　https://github.com/i386koba/CelluCon.Android
+* スマフォはフリーテルのFTJ152Aつかいました。
+* Android 4.0.3以上、GPS,磁気センサー、Bluetooth のあるスマフォなら使えます。
 
 ## スマートフォンを乗せたラジコン
 ![image](https://github.com/cellucon/readme/blob/master/rover.png)
@@ -30,15 +32,16 @@
 
 ## セルコンを動作させるに必要なこと
 
-## 動作の様子 
-2016.05.05 撮影
-[![](http://img.youtube.com/vi/YdYnNappXGU/0.jpg)](https://youtu.be/YdYnNappXGU?t=55s)
+## 動作の様子 2016.05.05 撮影
+https://youtu.be/YdYnNappXGU?t=55s
+
 
 ## 現状の問題点
 ## 軌跡の誤差
 ### 両ホイールの回転計設置による
 ### RTKによる数センチメートル誤差のGPS軌跡
 
+## PID制御
 
 ## その他 
 * 当初 Droid（Android-OS）+ drone (ドローン)　で　Droidrone　(ドロイドローン)としていましたが2017.10にセルコンに改名しました。
