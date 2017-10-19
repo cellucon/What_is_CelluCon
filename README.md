@@ -12,6 +12,10 @@
 ## 操作するWeb画面（カメラ映像、位置情報、遠隔操作パネル)
 ![image](https://github.com/cellucon/readme/blob/master/web-pilot.png)
 
+
+## スマートフォンを乗せたラジコン
+![image](https://github.com/cellucon/readme/blob/master/rover.png)
+
 格安
 ## Droidrone（ドロイドローン)からの改名（2017）
 * 言わずもがなですが、Droid（Android-OS）+ drone (ドローン)　で　Droidrone　と命名しました。
