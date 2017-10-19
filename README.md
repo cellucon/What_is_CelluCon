@@ -18,13 +18,13 @@
 　
 ## スマートフォンで動かすアプリ
 * ソースコードは　https://github.com/i386koba/CelluCon.Android
-* スマフォはフリーテルのFTJ152Aつかいました。
+* フリーテルの格安スマフォ FTJ152Aをつかいました。
 * Android 4.0.3以上、GPS,磁気センサー、Bluetooth のあるスマフォなら使えます。
 
 ## スマートフォンを乗せるラジコン
 ![image](https://github.com/cellucon/readme/blob/master/rover.png)
-TAMIYAのグラスホッパー、完成品を購入しました。
-完成品でなくシャーシキットとサーボとESCあれば心得のある人なら安上がりです。
+* TAMIYAのグラスホッパー、完成品を購入して、スマフォをつける改造しました。完成品はプロポが余ります。
+* ラジコンの心得のある人なら完成品でなく、シャーシキットとサーボとESCを別購入すればあれば安上がりでプロポが余りません。
 
 ## Bluetoothを受信するArduinoベースのマイコン
 * Arduinoスケッチ　https://github.com/i386koba/CellulCon.arduino
@@ -52,6 +52,10 @@ https://youtu.be/YdYnNappXGU?t=55s
 ### PID制御
 
 ### スマフォにPC側のカメラ映像を映してコミュニケート
+
+### 非アンドロイド化
+* Cordova https://cordova.apache.org/ 
+* BluetoothがCordovaプラグインはBLE対応のみのようなのでArduino基板のBLE化も必要。
 
 ### スマフォを使わない方法
 * ふつうはラズパイとなりますが、HDMIいらないし、Android 動けば楽なのかな。
