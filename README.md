@@ -26,7 +26,8 @@
 
 ## スマートフォンを乗せたラジコン
 ![image](https://github.com/cellucon/readme/blob/master/rover.png)
-
+TAMIYAのグラスホッパー、完成品を購入しました。
+完成品でなくシャーシキットとサーボとESCあれば
 
 (Arduinoで制御できるステッピングモーター
 
@@ -40,6 +41,8 @@ https://youtu.be/YdYnNappXGU?t=55s
 ## 軌跡の誤差
 ### 両ホイールの回転計設置による
 ### RTKによる数センチメートル誤差のGPS軌跡
+### 空を飛ぶものは違法？
+### SkyWayの移行
 
 ## PID制御
 
