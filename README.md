@@ -29,6 +29,7 @@
 ## Bluetoothを受信するArduinoベースのマイコン
 * Arduinoスケッチ　https://github.com/i386koba/CellulCon.arduino
 * Arduinoベースマイコン基板 https://github.com/i386koba/CelluCon.kicad
+* Arduinoで手作りした場合 https://github.com/i386koba/Droidrone-ino
 
 ## セルコンを動作させるに必要なこと
 
