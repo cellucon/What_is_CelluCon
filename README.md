@@ -99,7 +99,7 @@ https://support.skyway.io/hc/ja/articles/115012252947-SkyWay%E6%AD%A3%E5%BC%8F%E
 ### スマフォを使わない方法
 * ふつうはラズパイとなりますが、HDMIいらないし、WebRTCが動くSBCならなんとか。
 * 気になるSBC PINE64　http://akizukidenshi.com/catalog/g/gM-12067/
-* LTE通信モジュール Soracom PCI Express Mini Card (LTE Cat.1) https://soracom.jp/products/ec21-j/　が安い。5Mbpsでできるのかな。
+* LTE通信モジュール Soracom PCI Express Mini Card (LTE Cat.1) https://soracom.jp/products/ec21-j/ が安い。しかし5Mbpsでできるのかな。
 * 上記課題として https://github.com/i386koba/CelluCon.SBC でやっていく予定です（2017.10時点）。
 
 ## その他 
