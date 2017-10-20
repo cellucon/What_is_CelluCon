@@ -14,16 +14,20 @@
 * Android 4.0.3以上、GPS,磁気センサー、Bluetooth のあるスマフォで実行できます。
 * APKは　https://github.com/i386koba/CelluCon.Android/raw/master/app-debug.apk からスマフォにダウンロードして実行してください。
 * アプリ名は「CellularRC」です。（旧アプリの名前です。そのうち変えます。2017．10.19）
-* 現状、上記アプリはGooglePlayから提供していないため、Androidの設定で「提供元不明アプリを実行する」としてください。
+* 現状アプリはGooglePlayから提供していないため、Androidの設定で「提供元不明アプリを実行する」としてください。
 * 起動するとGoogleIDを聞かれます.
 ![image](https://github.com/cellucon/readme/blob/master/GoogleID-select.png)
-*GoogleIDを選択するか、追加してください。ログインしたGoogleIDのGoogleドライブにPeer.JSコネクションIDが保存されます。
-* ソースコードは　https://github.com/i386koba/CelluCon.Android
-
+* GoogleIDを選択するか、追加してください。ログインしたGoogleIDのGoogleドライブにPeer.JSコネクションIDが保存されます。
+* PeerIDが、Googleドライブに保存されますと、「PeerID　update!」とスマフォ画面の中段左に表示されます。
+* Androidアプリのソースコードは　https://github.com/i386koba/CelluCon.Android にあります。
 
 ## 操作するWeb画面（カメラ映像、位置情報、遠隔操作パネル)
 ![image](https://github.com/cellucon/readme/blob/master/web-pilot.png)
 * https://i386koba.github.io/CelluCon.web/ からWeb画面を開けます。
+* Androidアプリで保存したPeerIDを、Web画面からGoogleドライブにアクセスするため、画面中段右の「Authorize GoogleID」ボタンを押してください。
+* GoogleIDの選択ポップアップが出ますのでAndroidアプリでログインしたGoogleIDを選択してください。
+* テキストエリアに「Google drive load PeerId file.…」と表示されてIDを読み込みに行きます。
+* PeerIDが読み込まれてPeer接続できると、Androidアプリにカメラ映像が表示され、Web画面にも表示されます。
 ![image](https://github.com/cellucon/readme/blob/master/CelluerRC-RUN.png)
 
 * 航路の記録は　https://i386koba.github.io/CelluCon.web/mapLink.html から参照できます。
