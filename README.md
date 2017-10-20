@@ -85,21 +85,24 @@ https://support.skyway.io/hc/ja/articles/115012252947-SkyWay%E6%AD%A3%E5%BC%8F%E
 
 ## 近い将来の展望
 ### PID制御
+* 上記課題として https://github.com/i386koba/CelluCon.PID でやっていく予定です（2017.10時点）。
 
 ### スマフォにPC側のカメラ映像を映してコミュニケート
+* 上記課題として https://github.com/i386koba/CelluCon.Commu でやっていく予定です（2017.10時点）。
 
 ### 非アンドロイド化
 * AndroidアプリをWebアプリに移行
 * Cordova https://cordova.apache.org/ 
 * BluetoothがCordovaプラグインはBLE対応のみのようなのでArduino基板のBLE化も必要。
+* 上記課題として https://github.com/i386koba/CelluCon.WebApp でやっていく予定です（2017.10時点）。
 
 ### スマフォを使わない方法
-* ふつうはラズパイとなりますが、HDMIいらないし、Android 動けば楽なのかな。
-* 気になるシングルボードコンピュータＰＩＮＥ６４　http://akizukidenshi.com/catalog/g/gM-12067/
-* LTE通信モジュール Soracom PCI Express Mini Card (LTE Cat.1) https://soracom.jp/products/ec21-j/
-
+* ふつうはラズパイとなりますが、HDMIいらないし、WebRTCが動くSBCならなんとか。
+* 気になるSBC PINE64　http://akizukidenshi.com/catalog/g/gM-12067/
+* LTE通信モジュール Soracom PCI Express Mini Card (LTE Cat.1) https://soracom.jp/products/ec21-j/　が安い。5Mbpsでできるのかな。
+* 上記課題として https://github.com/i386koba/CelluCon.SBC でやっていく予定です（2017.10時点）。
 
 ## その他 
 * 当初 Droid（Android-OS）+ drone (ドローン)　で　Droidrone　(ドロイドローン)としていましたが2017.10にセルコンに改名しました。
 * オープンソースとして多くの人が試験、実験しやすいようにドキュメントを充実させていきたいです。
-* 雑多なことは[Wiki](https://github.com/cellucon/readme/wiki)に書いていきます。
+* プロジェクト全体の雑多なことは[Wiki](https://github.com/cellucon/readme/wiki)に書いていきます。
