@@ -1,6 +1,6 @@
 # CelluCon　セルコン　とは
 * 携帯電話網（セルラーネットワーク）を利用し、遠方のラジコン模型のライブ映像、GPS位置、センサ情報を確認して操縦できるシステムのことです。
-* セルラーコントロール（CellularControl）短くしてセルコンとしました。 （CellでなくCelluとしたのはCellConという会社が既にあったので。）
+* セルラーコントロール（CellularControl）短くしてセルコン。 （CellでなくCelluとしたのはCellConという会社があったので。）
 * オープンソースプロジェクトです。　GNU General Public License v3.0　https://github.com/cellucon/readme/blob/master/LICENSE
 
 **_システムの概念図_**
@@ -11,8 +11,8 @@
 * Bluetoothを受信するArduinoベースのマイコンが、Bluetooth操作コマンドでラジコンのサーボ、ESC（モーターコントローラー）を制御します。
 
 ## スマートフォンで動かすアプリ
+* APKは　https://github.com/i386koba/CelluCon.Android/raw/master/app-noSign-unsigned.apk からスマフォにダウンロードして実行してください。
 * ソースコードは　https://github.com/i386koba/CelluCon.Android
-* フリーテルの格安スマフォ FTJ152Aをつかいました。
 * Android 4.0.3以上、GPS,磁気センサー、Bluetooth のあるスマフォなら使えます。
 
 ## 操作するWeb画面（カメラ映像、位置情報、遠隔操作パネル)
