@@ -11,10 +11,16 @@
 * Bluetoothを受信するArduinoベースのマイコンが、Bluetooth操作コマンドでラジコンのサーボ、ESC（モーターコントローラー）を制御します。
 
 ## スマートフォンで動かすアプリ
+* Android 4.0.3以上、GPS,磁気センサー、Bluetooth のあるスマフォで実行できます。
 * APKは　https://github.com/i386koba/CelluCon.Android/raw/master/app-debug.apk からスマフォにダウンロードして実行してください。
+* アプリ名は「CellularRC」です。（旧アプリの名前です。そのうち変えます。2017．10.19）
 * 現状、上記アプリはGooglePlayから提供していないため、Androidの設定で「提供元不明アプリを実行する」としてください。
+* 起動するとGoogleIDを聞かれますので、選択するか、追加してください。ログインしたGoogleIDのGoogleドライブにPeer.JSコネクションIDが保存されます。
+![image](https://github.com/cellucon/readme/blob/master/GoogleID-select.png)
+![image](https://github.com/cellucon/readme/blob/master/CelluerRC-RUN.png)
+
 * ソースコードは　https://github.com/i386koba/CelluCon.Android
-* Android 4.0.3以上、GPS,磁気センサー、Bluetooth のあるスマフォなら使えます。
+
 
 ## 操作するWeb画面（カメラ映像、位置情報、遠隔操作パネル)
 ![image](https://github.com/cellucon/readme/blob/master/web-pilot.png)
