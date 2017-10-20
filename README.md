@@ -1,7 +1,7 @@
 # CelluCon　セルコン　とは
+* セルラーコントロール（CellularControl）短くしてセルコン。
 * 携帯電話網（セルラーネットワーク）を利用し、遠方のラジコン模型のライブ映像、GPS位置、センサ情報を確認して操縦できるシステムのことです。
-* セルラーコントロール（CellularControl）短くしてセルコン。 （CellでなくCelluとしたのはCellConという会社があったので。）
-* オープンソースプロジェクトです。　GNU General Public License v3.0　https://github.com/cellucon/readme/blob/master/LICENSE
+ * オープンソースプロジェクトです。　GNU General Public License v3.0　https://github.com/cellucon/readme/blob/master/LICENSE
 
 **_システムの概念図_**
 ![image](https://github.com/cellucon/readme/blob/master/diagram.png)
@@ -32,21 +32,20 @@
 ![image](https://github.com/cellucon/readme/blob/master/CelluerRC-RUN.png)
 * スマフォのGPS情報がWeb画面に転送されていますので、Web画面のGoogleMapにスマフォの（大体の）位置が青丸アイコンで表示されます。
 * 青丸アイコンを現在地にドラッグしてください。スマフォの磁気センサで方角、ラジコンの回転センサで距離が計算されて移動した軌跡が描かれます。
-
-* 航路の記録は　https://i386koba.github.io/CelluCon.web/mapLink.html から参照できます。
 * ソースコードは　https://github.com/i386koba/CelluCon.web
 　
+## Bluetoothを受信するArduinoベースのマイコン
+* Arduinoで手作りする場合の参考 https://github.com/i386koba/Droidrone-ino
+* スマフォとはBluetooth 2.x の SPPでシリアル通信します。
+* Androidアプリで右上の「BT接続」ボタンを押すとマイコンと通信をします。
+* Arduinoスケッチの参考　https://github.com/i386koba/CellulCon.arduino 
+* Arduinoベース専用マイコン基板（KiCAD） https://github.com/i386koba/CelluCon.kicad
+
 ## スマートフォンを乗せるラジコン
 ![image](https://github.com/cellucon/readme/blob/master/rover.png)
 * TAMIYAのグラスホッパー、完成品を購入して、スマフォをつける改造しました。完成品はプロポが余ります。
 * ラジコンの心得のある人なら完成品でなく、シャーシキットとサーボとESCを別購入すればあれば安上がりでプロポが余りません。
-
-## Bluetoothを受信するArduinoベースのマイコン
-* Arduinoで手作りした場合 https://github.com/i386koba/Droidrone-ino
-* スマフォとはBluetooth2.0のSPPでシリアル通信します。
-* Androidアプリで右上の「BT接続」ボタンを押すとマイコンと通信をします。
-* Arduinoスケッチ　https://github.com/i386koba/CellulCon.arduino
-* Arduinoベースマイコン基板 https://github.com/i386koba/CelluCon.kicad
+* 100円ショップにある車用スマフォホルダーなどでスマフォをラジコンに固定します。
 
 ## 動作の様子 2016.05.05 撮影
 https://youtu.be/YdYnNappXGU?t=55s
@@ -54,20 +53,17 @@ https://youtu.be/YdYnNappXGU?t=55s
 ## 現状の問題点
 ### 軌跡の誤差
 * GPSは10mほどの誤差があり、小さなラジコンを操作するには不便です。
-* 国産GPS みちびき使えば　数センチの精度になるとニュースで聞いた！　
+* 国産GPS みちびき使えば　数センチの精度になるとニュースで聞いた！　(実はみちびきを受信するだけではだめだった)
 * みちびき対応スマフォかいましたが、ほとんど精度良くなりません。後述するようにネットワーク型RTK測量でないとダメなようです。
 
 #### ネットワーク型RTK測量による数センチメートル誤差のGPS軌跡
 * ネットワーク型RTK測量とは、利用者が現場で取得した衛星データと、周辺の電子基準点の観測 データから作成された補正情報を組み合わせ、リアルタイムでcm級の測量を効率的に行う方式です （RTK：リアルタイム・キネマティック）。
-* ネットワーク型RTK測量計算は rtklib http://www.rtklib.com/ が有名ですので利用していきたいです。
-* GPSモジュール（u-blox8）でRTKできるとのこと2017.6に http://www.aitendo.com/product/11460 買ってありますが、まだいじくれてないです。 
-* ついでに u-blox GPSモジュール [NEO6M5PSMA-U]　http://www.aitendo.com/product/15499 もRTK出来るじゃないかと購入してあります。
-* ラジコンに搭載したu-blox GPSデータをWebRTCで送信し、Web画面のPCにも u-blox GPSを取り付けて、PCでrtklibで計算すればよいのかと思います。
+* GPSモジュール（u-blox8）でRTKできるとのこと.ラジコンに搭載したu-blox GPSデータをWebRTCで送信し、Web画面のPCにも u-blox GPSを取り付けて、PCでrtklibで計算すればよいのかと思います。
 * 上記課題として https://github.com/i386koba/CelluCon.RTK でやっていく予定です（2017.10時点）。
 
 #### ホイールの回転計によるトレース精度向上。
 * 移動距離はまぁ正確ですが、方向はスマフォの地磁気センサによる角度で、くるくる回るとすぐズレます。
-* 方向陀サーボの角度と、両ホイールの回転計での回転差を計算すれば正確になるでしょうか？
+* 方向陀サーボの角度と、両ホイールの回転計での回転差を計算すれば正確になる？
 * 上記課題として https://github.com/i386koba/CelluCon.trace でやっていく予定です（2017.10時点）。
 
 ### 携帯電話を空に飛ばせるのは違法らしい。
@@ -104,5 +100,6 @@ https://support.skyway.io/hc/ja/articles/115012252947-SkyWay%E6%AD%A3%E5%BC%8F%E
 
 ## その他 
 * 当初 Droid（Android-OS）+ drone (ドローン)　で　Droidrone　(ドロイドローン)としていましたが2017.10にセルコンに改名しました。
+* CellでなくCelluとしたのはCellConという会社があったので。（けど cellucon という会社もありました）
 * オープンソースとして多くの人が試験、実験しやすいようにドキュメントを充実させていきたいです。
 * プロジェクト全体の雑多なことは[Wiki](https://github.com/cellucon/readme/wiki)に書いていきます。
