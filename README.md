@@ -11,7 +11,8 @@
 * Bluetoothを受信するArduinoベースのマイコンが、Bluetooth操作コマンドでラジコンのサーボ、ESC（モーターコントローラー）を制御します。
 
 ## スマートフォンで動かすアプリ
-* APKは　https://github.com/i386koba/CelluCon.Android/raw/master/app-noSign-unsigned.apk からスマフォにダウンロードして実行してください。
+* APKは　https://github.com/i386koba/CelluCon.Android/raw/master/app-debug.apk からスマフォにダウンロードして実行してください。
+* 現状、上記アプリはGooglePlayから提供していないため、Androidの設定で「提供元不明アプリを実行する」としてください。
 * ソースコードは　https://github.com/i386koba/CelluCon.Android
 * Android 4.0.3以上、GPS,磁気センサー、Bluetooth のあるスマフォなら使えます。
 
