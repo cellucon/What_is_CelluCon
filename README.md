@@ -63,7 +63,7 @@ https://youtu.be/YdYnNappXGU?t=55s
 
 #### ホイールの回転計によるトレース精度向上。
 * 移動距離はまぁ正確ですが、方向はスマフォの地磁気センサによる角度で、くるくる回るとすぐズレます。
-* 方向陀サーボの角度と、両ホイールの回転計での回転差を計算すれば正確になる？
+* 方向陀サーボの角度と、両ホイールの回転計での回転差を計算して正確に位置を割り出すのが目的。
 * 上記課題として https://github.com/i386koba/CelluCon.trace でやっていく予定です（2017.10時点）。
 
 ### 携帯電話を空に飛ばせるのは違法らしい。
@@ -95,7 +95,7 @@ https://support.skyway.io/hc/ja/articles/115012252947-SkyWay%E6%AD%A3%E5%BC%8F%E
 ### スマフォを使わない方法
 * ふつうはラズパイとなりますが、HDMIいらないし、WebRTCが動くSBCならなんとか。
 * 気になるSBC PINE64　http://akizukidenshi.com/catalog/g/gM-12067/
-* LTE通信モジュール Soracom PCI Express Mini Card (LTE Cat.1) https://soracom.jp/products/ec21-j/ が安い。しかし5Mbpsでできるのかな。
+* LTE通信モジュール Soracom PCI Express Mini Card (LTE Cat.1) https://soracom.jp/products/ec21-j/ が安い。しかし5Mbps。
 * 上記課題として https://github.com/i386koba/CelluCon.SBC でやっていく予定です（2017.10時点）。
 
 ## その他 
