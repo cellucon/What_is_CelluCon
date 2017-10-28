@@ -10,29 +10,12 @@
 （PCのマウス操作だけでも操作できます）
 * Bluetoothを受信するArduinoベースのマイコンが、Bluetooth操作コマンドでラジコンのサーボ、ESC（モーターコントローラー）を制御します。
 
-## スマートフォンで動かすアプリ
-* Android 4.0.3以上、GPS,磁気センサー、Bluetooth のあるスマフォで実行できます。
-* APKは　https://github.com/i386koba/CelluCon.Android/raw/master/app-debug.apk からスマフォにダウンロードして実行してください。
-* アプリ名は「CellularRC」です。（旧アプリの名前です。そのうち変えます。2017．10.19）
-* 現状アプリはGooglePlayから提供していないため、Androidの設定で「提供元不明アプリを実行する」としてください。
-* スマフォのGPSが起動していない場合は、GPSの起動を要求されますのでGPSを有効にしてください。
-* 起動するとGoogleIDを聞かれます.
-![image](https://github.com/cellucon/readme/blob/master/GoogleID-select.png)
-* GoogleIDを選択するか、追加してください。ログインしたGoogleIDのGoogleドライブにPeer.JSコネクションIDが保存されます。
-* PeerIDが、Googleドライブに保存されますと、「PeerID　update!」とスマフォ画面の中段左に表示されます。
-* Androidアプリのソースコードは　https://github.com/i386koba/CelluCon.Android にあります。
+## セルコンを動かすまで
+[wiki](wiki/)にまとめてあります。
 
-## 操作するWeb画面（カメラ映像、位置情報、遠隔操作パネル)
-![image](https://github.com/cellucon/readme/blob/master/web-pilot.png)
-* https://i386koba.github.io/CelluCon.web/ からWeb画面を開けます。
-* Androidアプリで保存したPeerIDを、Web画面からGoogleドライブにアクセスするため、画面中段右の「Authorize GoogleID」ボタンを押してください。
-* GoogleIDの選択ポップアップが出ますのでAndroidアプリでログインしたGoogleIDを選択してください。
-* テキストエリアに「Google drive load PeerId file.…」と表示されてIDを読み込みに行きます。
-* PeerIDが読み込まれてPeer接続できると、Androidアプリにカメラ映像が表示され、Web画面にも表示されます。
-![image](https://github.com/cellucon/readme/blob/master/CelluerRC-RUN.png)
-* スマフォのGPS情報がWeb画面に転送されていますので、Web画面のGoogleMapにスマフォの（大体の）位置が青丸アイコンで表示されます。
-* 青丸アイコンを現在地にドラッグしてください。スマフォの磁気センサで方角、ラジコンの回転センサで距離が計算されて移動した軌跡が描かれます。
-* ソースコードは　https://github.com/i386koba/CelluCon.web
+## ソース
+* Androidアプリのソースコードは　https://github.com/i386koba/CelluCon.Android
+* 操作するWeb画面のソースコードは　https://github.com/i386koba/CelluCon.web
 　
 ## Bluetoothを受信するArduinoベースのマイコン
 * Arduinoで手作りする場合の参考 https://github.com/i386koba/Droidrone-ino
