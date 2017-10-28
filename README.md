@@ -1,7 +1,8 @@
 # CelluCon　セルコン　とは
 * セルラーコントロール（CellularControl）のことで携帯電話網（セルラーネットワーク）を利用し、遠方のラジコン模型のライブ映像、GPS位置、センサ情報を確認して操縦できるシステムのことです。短くしてセルコン。
- * 2017年10月時点でオープンソースプロジェクトとしています。　GNU General Public License v3.0　https://github.com/cellucon/readme/blob/master/LICENSE
-
+* オープンソースプロジェクトとしています。　GNU General Public License v3.0　https://github.com/cellucon/readme/blob/master/LICENSE
+ （2017年10月時点）
+ 
 **_システムの概念図_**
 ![image](https://github.com/cellucon/readme/blob/master/diagram.png)
 * スマートフォンをラジコン模型に搭載させて、スマートフォンのカメラ映像とGPS、外部センサによる情報を、インターネットにつながったPCのWeb画面上から確認できます。
