@@ -11,7 +11,7 @@
 * Bluetoothを受信するArduinoベースのマイコンが、Bluetooth操作コマンドでラジコンのサーボ、ESC（モーターコントローラー）を制御します。
 
 ## セルコンを動かすまで
-[wiki](wiki/)にまとめてあります。
+[wiki](wiki)にまとめてあります。
 
 ## ソース
 * Androidアプリのソースコードは　https://github.com/i386koba/CelluCon.Android
