@@ -16,20 +16,8 @@
 ## ソース
 * Androidアプリのソースコードは　https://github.com/i386koba/CelluCon.Android
 * 操作するWeb画面のソースコードは　https://github.com/i386koba/CelluCon.web
-　
-## Bluetoothを受信するArduinoベースのマイコン
-* Arduinoで手作りする場合の参考 https://github.com/i386koba/Droidrone-ino
-* スマフォとはBluetooth 2.x の SPPでシリアル通信します。
-* Androidアプリで右上の「BT接続」ボタンを押すとマイコンと通信をします。
 * Arduinoスケッチの参考　https://github.com/i386koba/CellulCon.arduino 
 * Arduinoベース専用マイコン基板（KiCAD） https://github.com/i386koba/CelluCon.kicad
-
-## スマートフォンを乗せるラジコン
-![image](https://github.com/cellucon/readme/blob/master/rover.png)
-* TAMIYAのグラスホッパー、完成品を購入して、スマフォをつける改造しました。完成品はプロポが余ります。
-* ラジコンの心得のある人なら完成品でなく、シャーシキットとサーボとESCを別購入すればあれば安上がりでプロポが余りません。
-* 100円ショップにある車用スマフォホルダーなどでスマフォをラジコンに固定します。
-* 登載するラジコン作成例などは https://github.com/i386koba/CelluCon.trace にまとめていきます。
 
 ## 動作の様子 2016.05.05 撮影
 https://youtu.be/YdYnNappXGU?t=55s
