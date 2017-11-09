@@ -12,7 +12,7 @@
 
 ## セルコンを動かすまで
 [wiki](https://github.com/cellucon/What_is_CelluCon/wiki)にまとめてあります。
-
+https://qiita.com/i386koba/items/873869926bde7614b128　にもあります。
 ## ソース
 * Androidアプリのソースコードは　https://github.com/i386koba/CelluCon.Android
 * 操作するWeb画面のソースコードは　https://github.com/i386koba/CelluCon.web
