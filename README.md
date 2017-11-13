@@ -88,6 +88,7 @@ SFU は Selective Forwarding Unit の略で、簡単に言えば SFU という�
 * ふつうはラズパイとなりますが、HDMIいらないし、WebRTCが動くSBCならなんとか。
 * 気になるSBC PINE64　http://akizukidenshi.com/catalog/g/gM-12067/
 * LTE通信モジュール Soracom PCI Express Mini Card (LTE Cat.1) https://soracom.jp/products/ec21-j/ が安い。しかし5Mbps。
+* http://momo.shiguredo.jp/  Momo があればブラウザがなくとも、比較的安価で手に入る Raspberry Pi 2 Model B (※1) と Web カメラを使って、WebRTC による映像の配信ができます 。
 * 上記課題として https://github.com/i386koba/CelluCon.SBC でやっていく予定です（2017.10時点）。
 
 
