@@ -56,6 +56,12 @@ https://youtu.be/YdYnNappXGU?t=55s
 https://support.skyway.io/hc/ja/articles/115012252947-SkyWay%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E5%8C%96%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%A8%E3%81%8A%E9%A1%98%E3%81%84
 * とのことで、2018年3月以降、Skywayを商用利用してつづけるか、ほかの接続サービスにするか、接続サービスサーバーを立げるか未定（2017.10時点）です。
 
+### 映像ライブ共有　
+時雨堂 WebRTC SFU Sora 開発ログ　より
+https://gist.github.com/voluntas/e914aa245fc26f3133c2#sfu
+SFU は Selective Forwarding Unit の略で、簡単に言えば SFU というサーバが動画を配信者に変わって複数の視聴者に配信してくれる仕組みです。
+
+
 ### スマフォ（Java）PID制御、遠隔PIDパラメータチューニング
 * スマフォの加速度センサを用いてBluetoothにつながっているサーボモーターをPID制御する。まずは倒立2輪車に挑戦中。
 * スマフォセンサ情報はWeb画面のPCで取り込んで解析し、最適なPIDパラメーターを計算する仕組み。
@@ -83,6 +89,7 @@ https://support.skyway.io/hc/ja/articles/115012252947-SkyWay%E6%AD%A3%E5%BC%8F%E
 * 気になるSBC PINE64　http://akizukidenshi.com/catalog/g/gM-12067/
 * LTE通信モジュール Soracom PCI Express Mini Card (LTE Cat.1) https://soracom.jp/products/ec21-j/ が安い。しかし5Mbps。
 * 上記課題として https://github.com/i386koba/CelluCon.SBC でやっていく予定です（2017.10時点）。
+
 
 ## その他 
 * 当初 Droid（Android-OS）+ drone (ドローン)　で　Droidrone　(ドロイドローン)としていましたが2017.10にセルコンに改名しました。
